@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <Label fx:id="maintitle" alignment="CENTER" layoutX="87.0" layoutY="116.0" prefHeight="46.0" prefWidth="326.0" text="Welcome to GHGStore ">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="maincatalog" layoutX="39.0" layoutY="35.0" onAction="#aboutusAction" text="AboutUs" textFill="#27991b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="mainadmin" layoutX="364.0" layoutY="37.0" onAction="#AdminLogin" text="Admin" textFill="#27991b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink fx:id="mainlogin" layoutX="213.0" layoutY="35.0" onAction="#UserLogin" text="Login" textFill="#27991b">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Hyperlink>
+      <ImageView fx:id="iphone13" fitHeight="107.0" fitWidth="147.0" layoutX="54.0" layoutY="209.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../store/iphone13.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iphone12" fitHeight="116.0" fitWidth="74.0" layoutX="201.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../store/iphone12.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="buybutton13" layoutX="66.0" layoutY="335.0" mnemonicParsing="false" onAction="#UserLogin" text="Buy">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="buybutton12" layoutX="214.0" layoutY="333.0" mnemonicParsing="false" onAction="#UserLogin" text="Buy">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <ImageView fitHeight="89.0" fitWidth="131.0" layoutX="324.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../store/GalaxyZ.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="buybuttonz" layoutX="363.0" layoutY="335.0" mnemonicParsing="false" onAction="#UserLogin" text="Buy">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
